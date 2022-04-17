@@ -19,11 +19,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func CopyButton(_ sender: UIButton) {
-        if infoLabel.isHidden == true {
-            infoLabel.isHidden = false
-        } else {
-            infoLabel.isHidden = true
-        }
+        infoLabel.isHidden = false
         
     }
     @IBAction func showButton(_ sender: UIButton) {
