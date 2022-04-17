@@ -9,11 +9,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var optionLabel: UILabel!
+    @IBOutlet var infoLabel: UILabel!
+    @IBOutlet var showButtonText: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        infoLabel.isHidden = true
     }
 
-
+    @IBAction func CopyButton(_ sender: UIButton) {
+        if infoLabel.isHidden == true {
+            infoLabel.isHidden = false
+        } else {
+            infoLabel.isHidden = true
+        }
+        
+    }
+    @IBAction func showButton(_ sender: UIButton) {
+        if nameLabel.text == "Роман" && optionLabel.text == "Студент" {
+            nameLabel.text = "Карасёв Роман Николаевич"
+            optionLabel.text = "Студент Otus"
+            showButtonText.titleLabel?.text = "Show short Info"
+        } else {
+            nameLabel.text = "Роман"
+            optionLabel.text = "Студент"
+            showButtonText.titleLabel?.text = "Show full Info"
+        }
+        
+        
+    }
+    
 }
 
