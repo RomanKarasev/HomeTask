@@ -9,6 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	enum DisplayMode {
+		case new, edit
+	}
+
     let model = Model()
     
     @IBOutlet var nameLabel: UILabel! = {
@@ -16,17 +20,31 @@ class ViewController: UIViewController {
         label.text = ""
         return label
     }()
+	
     @IBOutlet var optionLabel: UILabel!
     @IBOutlet var infoLabel: UILabel!
     @IBOutlet var showButtonText: UIButton!
-    
+
+	var selectedStudent: Student?
     
     let info = FullInfoTableViewCell()
-    override func viewDidLoad() {
+
+	override func viewDidLoad() {
         super.viewDidLoad()
         infoLabel.isHidden = true
-
     }
+
+	override func viewDidLayoutSubviews() {
+		updateOutletsIfNeeded()
+	}
+
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+
+		if let vc = navigationController?.viewControllers.filter({ $0 is InfoTableViewController }) {
+			print(vc)
+		}
+	}
 
         
     @IBAction func CopyButton(_ sender: UIButton) {
@@ -47,6 +65,16 @@ class ViewController: UIViewController {
 //        
 //        
 //    }
+
+	private func updateOutletsIfNeeded() {
+		guard let data = selectedStudent
+		else {
+			return
+		}
+
+		nameLabel.text = data.studentsName
+		optionLabel.text = data.studentStatus
+	}
     
 }
 
