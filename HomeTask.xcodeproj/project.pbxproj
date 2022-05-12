@@ -10,7 +10,6 @@
 		7437DE9E282BF3E7008A2368 /* FullInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437DE9D282BF3E7008A2368 /* FullInfoTableViewCell.swift */; };
 		7437DEA0282BF449008A2368 /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437DE9F282BF449008A2368 /* InfoTableViewController.swift */; };
 		7437DEA2282BF8C2008A2368 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437DEA1282BF8C2008A2368 /* Model.swift */; };
-		7437DEA6282C10BF008A2368 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437DEA5282C10BF008A2368 /* Protocol.swift */; };
 		74DA2518280BE37D0086DD58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA2517280BE37D0086DD58 /* AppDelegate.swift */; };
 		74DA251A280BE37D0086DD58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA2519280BE37D0086DD58 /* SceneDelegate.swift */; };
 		74DA251C280BE37D0086DD58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA251B280BE37D0086DD58 /* ViewController.swift */; };
@@ -23,7 +22,6 @@
 		7437DE9D282BF3E7008A2368 /* FullInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullInfoTableViewCell.swift; sourceTree = "<group>"; };
 		7437DE9F282BF449008A2368 /* InfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
 		7437DEA1282BF8C2008A2368 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		7437DEA5282C10BF008A2368 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		74DA2514280BE37D0086DD58 /* HomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DA2517280BE37D0086DD58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74DA2519280BE37D0086DD58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				74DA2520280BE3840086DD58 /* Assets.xcassets */,
 				74DA2522280BE3850086DD58 /* LaunchScreen.storyboard */,
 				74DA2525280BE3850086DD58 /* Info.plist */,
-				7437DEA5282C10BF008A2368 /* Protocol.swift */,
 			);
 			path = HomeTask;
 			sourceTree = "<group>";
@@ -153,7 +150,6 @@
 				7437DE9E282BF3E7008A2368 /* FullInfoTableViewCell.swift in Sources */,
 				7437DEA0282BF449008A2368 /* InfoTableViewController.swift in Sources */,
 				74DA251C280BE37D0086DD58 /* ViewController.swift in Sources */,
-				7437DEA6282C10BF008A2368 /* Protocol.swift in Sources */,
 				7437DEA2282BF8C2008A2368 /* Model.swift in Sources */,
 				74DA2518280BE37D0086DD58 /* AppDelegate.swift in Sources */,
 				74DA251A280BE37D0086DD58 /* SceneDelegate.swift in Sources */,

@@ -9,64 +9,48 @@ import UIKit
 
 class ViewController: UIViewController {
 
-	enum DisplayMode {
-		case new, edit
-	}
+	
 
     let model = Model()
+    var selectedStudent: Student?
     
-    @IBOutlet var nameLabel: UILabel! = {
-        let label = UILabel()
-        label.text = ""
-        return label
-    }()
-	
+    @IBOutlet var nameLabel: UILabel!
     @IBOutlet var optionLabel: UILabel!
     @IBOutlet var infoLabel: UILabel!
     @IBOutlet var showButtonText: UIButton!
 
-	var selectedStudent: Student?
-    
-    let info = FullInfoTableViewCell()
+	
 
 	override func viewDidLoad() {
         super.viewDidLoad()
         infoLabel.isHidden = true
-    }
-
-	override func viewDidLayoutSubviews() {
-		updateOutletsIfNeeded()
-	}
-
-	override func viewWillDisappear(_ animated: Bool) {
-		super.viewWillDisappear(animated)
-
-		if let vc = navigationController?.viewControllers.filter({ $0 is InfoTableViewController }) {
-			print(vc)
-		}
-	}
-
-        
-    @IBAction func CopyButton(_ sender: UIButton) {
-        infoLabel.isHidden = false
-        
+        updateOutlets()
     }
     
-//    @IBAction func showButton(_ sender: UIButton) {
-//        if nameLabel.text == "Роман" && optionLabel.text == "Студент" {
-//            nameLabel.text = "Карасёв Роман Николаевич"
-//            optionLabel.text = "Студент Otus"
-//            showButtonText.titleLabel?.text = "Show short Info"
-//        } else {
-//            nameLabel.text = "Роман"
-//            optionLabel.text = "Студент"
-//            showButtonText.titleLabel?.text = "Show full Info"
-//        }
-//        
-//        
-//    }
+    @IBAction func CopyButton(_ sender: UIButton) {
+        infoLabel.isHidden = false
+    }
+    
+    @IBAction func showButton(_ sender: UIButton) {
+        
+        guard let data = selectedStudent
+        else {
+            return
+        }
 
-	private func updateOutletsIfNeeded() {
+        if nameLabel.text == data.studentsName {
+        nameLabel.text = data.studentFullName
+        optionLabel.text = data.studentFullStatus
+        showButtonText.setTitle("Show short info", for: .normal)
+        } else {
+            nameLabel.text = data.studentsName
+            optionLabel.text = data.studentStatus
+            showButtonText.setTitle("Show full info", for: .normal)
+            
+        }
+    }
+
+	private func updateOutlets() {
 		guard let data = selectedStudent
 		else {
 			return
@@ -74,8 +58,8 @@ class ViewController: UIViewController {
 
 		nameLabel.text = data.studentsName
 		optionLabel.text = data.studentStatus
+        
 	}
-    
 }
 
 

@@ -37,31 +37,12 @@ class InfoTableViewController: UITableViewController {
 	}
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//		switch indexPath.row {
-//		case 0: print("1")
-//		case 1: print("2")
-//		case 2: print("3")
-//		default:
-//			break
-//		}
 
-//		selectedCellIdx = indexPath.row
-//		performSegue(withIdentifier: segueIdentifier, sender: nil)
 
-		guard let viewController = UIStoryboard(
-			name: "Main",
-			bundle: nil
-		).instantiateViewController(
-			withIdentifier: fullInfoVCIdentifier
-		) as? ViewController
-		else {
-			return
-		}
+		selectedCellIdx = indexPath.row
+		performSegue(withIdentifier: segueIdentifier, sender: nil)
 
-		viewController.selectedStudent = model.studentsArray[indexPath.row]
-		navigationController?.pushViewController(viewController, animated: true)
-	}
-
+    }
 	// MARK: Navigation
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -75,7 +56,3 @@ class InfoTableViewController: UITableViewController {
 	}
 }
 
-extension InfoTableViewController: ChangeDelegate {
-	func changeModel(indexPath: IndexPath) {
-	}
-}

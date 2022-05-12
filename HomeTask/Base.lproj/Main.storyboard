@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xQ8-wS-J3W">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2ej-iX-Q6v">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -47,14 +47,14 @@
             <objects>
                 <viewController storyboardIdentifier="fullInfoVC" id="BYZ-38-t0r" customClass="ViewController" customModule="HomeTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man-300x300" translatesAutoresizingMaskIntoConstraints="NO" id="BYN-nD-f5E">
-                                <rect key="frame" x="80" y="108" width="240" height="136"/>
+                                <rect key="frame" x="80" y="64" width="240" height="160"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jNS-NX-FcO">
-                                <rect key="frame" x="20" y="264" width="374" height="49"/>
+                                <rect key="frame" x="20" y="244" width="374" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Роман" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NO-jd-onJ">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
@@ -74,7 +74,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wfk-CR-dvr">
-                                <rect key="frame" x="80" y="323" width="239.5" height="40"/>
+                                <rect key="frame" x="80" y="303" width="239.5" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="ул. Оптиков 22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pd-Gi-m4g">
                                         <rect key="frame" x="0.0" y="0.0" width="157" height="40"/>
@@ -106,7 +106,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9p-c6-P8x">
-                                <rect key="frame" x="148" y="822" width="120" height="40"/>
+                                <rect key="frame" x="147" y="752" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="HPa-U4-z7J"/>
                                     <constraint firstAttribute="height" constant="40" id="NGw-44-aiI"/>
@@ -118,7 +118,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Скопировано" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74M-tp-UgZ">
-                                <rect key="frame" x="153.5" y="438" width="107" height="20.5"/>
+                                <rect key="frame" x="153.5" y="411" width="107" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -128,9 +128,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BYN-nD-f5E" secondAttribute="trailing" constant="94" id="1H6-el-7d0"/>
-                            <constraint firstItem="o9p-c6-P8x" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9UX-rD-lPn"/>
+                            <constraint firstItem="o9p-c6-P8x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5fP-hW-8WC"/>
+                            <constraint firstItem="o9p-c6-P8x" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-50" id="9UX-rD-lPn"/>
                             <constraint firstItem="BYN-nD-f5E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Jx2-WY-ZV0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o9p-c6-P8x" secondAttribute="trailing" constant="146" id="LNA-Ec-JuC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jNS-NX-FcO" secondAttribute="trailing" constant="20" id="X2c-b0-uRp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BYN-nD-f5E" secondAttribute="bottom" constant="618" id="YX5-CD-w5g"/>
                             <constraint firstItem="jNS-NX-FcO" firstAttribute="top" secondItem="BYN-nD-f5E" secondAttribute="bottom" constant="20" id="dL7-P8-x9V"/>
@@ -142,7 +142,6 @@
                             <constraint firstItem="wfk-CR-dvr" firstAttribute="top" secondItem="jNS-NX-FcO" secondAttribute="bottom" constant="10" id="oni-dr-Zc9"/>
                             <constraint firstItem="74M-tp-UgZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pwY-tY-pCb"/>
                             <constraint firstItem="wfk-CR-dvr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="q22-ix-P1b"/>
-                            <constraint firstItem="o9p-c6-P8x" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="shk-ll-ucV"/>
                             <constraint firstItem="BYN-nD-f5E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="uoc-xv-8zb"/>
                         </constraints>
                     </view>
@@ -157,24 +156,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="679.71014492753625" y="42.857142857142854"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="LyN-iB-Haa">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xQ8-wS-J3W" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j5M-p0-7wO">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="2ej-iX-Q6v" kind="relationship" relationship="rootViewController" id="yFN-dl-Fo2"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rgf-UC-zON" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1101.449275362319" y="42.857142857142854"/>
         </scene>
     </scenes>
     <resources>
